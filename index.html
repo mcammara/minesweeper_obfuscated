@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Minesweeper</title>
+        <link type="text/css" rel="stylesheet" href="minesweeper.css" />
+    </head>
+    <body>
+        <h1>Minesweeper</h1>
+
+        <div id="board1div"></div>
+        <div id="board2div"></div>
+        <div id="board3div"></div>
+
+        <script src="obfuscated.js"></script>
+        <script>
+        new MineSweeperBoard(8, 8, 10, document.getElementById("board1div"));
+        new MineSweeperBoard(12, 12, 25, document.getElementById("board2div"));
+        new MineSweeperBoard(25, 15, 70, document.getElementById("board3div"));
+
+        </script>
+    </body>
+</html>
